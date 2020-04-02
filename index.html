@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Money Tracker</title>
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <header>
+            <p>Money Tracker</p>
+        </header>
+        <main>
+            <aside class="nav-container">
+                <nav class="nav">
+                    <a href="#" class="nav-items">
+                        <svg
+                            width="25"
+                            height="25"
+                            viewBox="0 0 30 30"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <rect
+                                x="1"
+                                y="1"
+                                width="17.766"
+                                height="10.5682"
+                                stroke="white"
+                                stroke-width="2"
+                            />
+                            <rect
+                                x="29"
+                                y="1"
+                                width="28"
+                                height="10.0213"
+                                transform="rotate(90 29 1)"
+                                stroke="white"
+                                stroke-width="2"
+                            />
+                            <rect
+                                x="18.9149"
+                                y="12"
+                                width="17"
+                                height="17.9149"
+                                transform="rotate(90 18.9149 12)"
+                                stroke="white"
+                                stroke-width="2"
+                            />
+                        </svg>
+
+                        <p>Home</p>
+                    </a>
+                    <a href="#" class="nav-items">
+                        <svg
+                            width="25"
+                            height="25"
+                            viewBox="0 0 30 30"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <rect
+                                x="1"
+                                y="1"
+                                width="28"
+                                height="28"
+                                stroke="white"
+                                stroke-width="2"
+                            />
+                            <rect
+                                x="4"
+                                y="5"
+                                width="21"
+                                height="2"
+                                fill="white"
+                            />
+                            <rect
+                                x="4"
+                                y="9"
+                                width="21"
+                                height="2"
+                                fill="white"
+                            />
+                            <rect
+                                x="4"
+                                y="13"
+                                width="21"
+                                height="2"
+                                fill="white"
+                            />
+                            <rect
+                                x="4"
+                                y="17"
+                                width="12"
+                                height="2"
+                                fill="white"
+                            />
+                        </svg>
+
+                        <p>History</p>
+                    </a>
+                    <a href="#" class="nav-items">
+                        <svg
+                            width="25"
+                            height="25"
+                            viewBox="0 0 30 30"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <rect
+                                x="5"
+                                y="22"
+                                width="2"
+                                height="4"
+                                fill="white"
+                            />
+                            <rect
+                                x="11"
+                                y="17"
+                                width="2"
+                                height="9"
+                                fill="white"
+                            />
+                            <rect
+                                x="17"
+                                y="10"
+                                width="2"
+                                height="16"
+                                fill="white"
+                            />
+                            <rect
+                                x="23"
+                                y="4"
+                                width="2"
+                                height="22"
+                                fill="white"
+                            />
+                            <rect
+                                x="1"
+                                y="1"
+                                width="28"
+                                height="28"
+                                stroke="white"
+                                stroke-width="2"
+                            />
+                        </svg>
+
+                        <p>Report</p>
+                    </a>
+                </nav>
+            </aside>
+
+            <section class="container">
+                <section class="content">
+                    <div id="balance" class="card">
+                        <div>
+                            <h4>Balance</h4>
+                            <p id="current-balance">Rp. 25.000</p>
+                        </div>
+
+                        <div>
+                            <h4>Expenses</h4>
+                            <p id="expenses">
+                                Rp. 50.000
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card" id="t-form">
+                        <form>
+                            <h3>Add Transaction</h3>
+                            <div class="form-items">
+                                <label>Amount</label>
+                                <input
+                                    type="text"
+                                    class="form-input"
+                                    placeholder="Amount"
+                                />
+                            </div>
+
+                            <div class="form-items">
+                                <label>Notes</label>
+                                <input
+                                    type="text"
+                                    class="form-input"
+                                    placeholder="Amount"
+                                />
+                            </div>
+
+                            <div class="form-items">
+                                <button class="btn btn-save">Save</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="history">
+                        <p class="card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque quas odit totam id dignissimos,
+                            quisquam maxime minus. Officiis, ullam maiores,
+                            animi ad similique aliquam porro itaque ducimus
+                            totam amet quidem.
+                        </p>
+                        <p class="card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque quas odit totam id dignissimos,
+                            quisquam maxime minus. Officiis, ullam maiores,
+                            animi ad similique aliquam porro itaque ducimus
+                            totam amet quidem.
+                        </p>
+                        <p class="card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque quas odit totam id dignissimos,
+                            quisquam maxime minus. Officiis, ullam maiores,
+                            animi ad similique aliquam porro itaque ducimus
+                            totam amet quidem.
+                        </p>
+                        <p class="card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque quas odit totam id dignissimos,
+                            quisquam maxime minus. Officiis, ullam maiores,
+                            animi ad similique aliquam porro itaque ducimus
+                            totam amet quidem.
+                        </p>
+                        <p class="card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque quas odit totam id dignissimos,
+                            quisquam maxime minus. Officiis, ullam maiores,
+                            animi ad similique aliquam porro itaque ducimus
+                            totam amet quidem.
+                        </p>
+                        <p class="card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque quas odit totam id dignissimos,
+                            quisquam maxime minus. Officiis, ullam maiores,
+                            animi ad similique aliquam porro itaque ducimus
+                            totam amet quidem.
+                        </p>
+                        <p class="card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque quas odit totam id dignissimos,
+                            quisquam maxime minus. Officiis, ullam maiores,
+                            animi ad similique aliquam porro itaque ducimus
+                            totam amet quidem.
+                        </p>
+                        <p class="card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque quas odit totam id dignissimos,
+                            quisquam maxime minus. Officiis, ullam maiores,
+                            animi ad similique aliquam porro itaque ducimus
+                            totam amet quidem.
+                        </p>
+                        <p class="card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque quas odit totam id dignissimos,
+                            quisquam maxime minus. Officiis, ullam maiores,
+                            animi ad similique aliquam porro itaque ducimus
+                            totam amet quidem.
+                        </p>
+                        <p class="card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque quas odit totam id dignissimos,
+                            quisquam maxime minus. Officiis, ullam maiores,
+                            animi ad similique aliquam porro itaque ducimus
+                            totam amet quidem.
+                        </p>
+                        <p class="card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque quas odit totam id dignissimos,
+                            quisquam maxime minus. Officiis, ullam maiores,
+                            animi ad similique aliquam porro itaque ducimus
+                            totam amet quidem.
+                        </p>
+                        <p class="card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque quas odit totam id dignissimos,
+                            quisquam maxime minus. Officiis, ullam maiores,
+                            animi ad similique aliquam porro itaque ducimus
+                            totam amet quidem.
+                        </p>
+                        <p class="card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque quas odit totam id dignissimos,
+                            quisquam maxime minus. Officiis, ullam maiores,
+                            animi ad similique aliquam porro itaque ducimus
+                            totam amet quidem.
+                        </p>
+                        <p class="card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque quas odit totam id dignissimos,
+                            quisquam maxime minus. Officiis, ullam maiores,
+                            animi ad similique aliquam porro itaque ducimus
+                            totam amet quidem.
+                        </p>
+                        <p class="card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque quas odit totam id dignissimos,
+                            quisquam maxime minus. Officiis, ullam maiores,
+                            animi ad similique aliquam porro itaque ducimus
+                            totam amet quidem.
+                        </p>
+                        <p class="card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque quas odit totam id dignissimos,
+                            quisquam maxime minus. Officiis, ullam maiores,
+                            animi ad similique aliquam porro itaque ducimus
+                            totam amet quidem.
+                        </p>
+                        <p class="card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque quas odit totam id dignissimos,
+                            quisquam maxime minus. Officiis, ullam maiores,
+                            animi ad similique aliquam porro itaque ducimus
+                            totam amet quidem.
+                        </p>
+                        <p class="card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque quas odit totam id dignissimos,
+                            quisquam maxime minus. Officiis, ullam maiores,
+                            animi ad similique aliquam porro itaque ducimus
+                            totam amet quidem.
+                        </p>
+                        <p class="card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque quas odit totam id dignissimos,
+                            quisquam maxime minus. Officiis, ullam maiores,
+                            animi ad similique aliquam porro itaque ducimus
+                            totam amet quidem.
+                        </p>
+                    </div>
+                </section>
+
+                <aside class="profile">
+                    <div class="card">
+                        <img src="assets/img/dashboard.svg" alt="profile" />
+                        <p>Fiqri Khoirul M</p>
+                        <p>fiqrikm18@gmail.com</p>
+                        <p>+628221482xxxx</p>
+
+                        <div class="sociale">
+                            <a href="#"
+                                ><span class="fa fa-facebook soc-icon"></span
+                            ></a>
+                            <a href="#"
+                                ><span class="fa fa-instagram soc-icon"></span
+                            ></a>
+                            <a href="#"
+                                ><span class="fa fa-envelope soc-icon"></span
+                            ></a>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+        </main>
+        <footer>
+            <p>&copy Fiqri</p>
+        </footer>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
