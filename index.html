@@ -11,6 +11,16 @@
             integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
             crossorigin="anonymous"
         />
+
+        <script>
+            window.onload = function() {
+                isLoggedin = localStorage.getItem("isLoggedIn");
+
+                if(!isLoggedin || isLoggedin == undefined || isLoggedin == null) {
+                    window.location = '/login.html'
+                }
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -173,28 +183,38 @@
                     </div>
 
                     <div class="card" id="t-form">
-                        <form>
+                        <form onsubmit="saveData(event)">
                             <h3>Add Transaction</h3>
                             <div class="form-items">
                                 <label>Amount</label>
                                 <input
                                     type="text"
+                                    name="amount"
                                     class="form-input"
                                     placeholder="Amount"
+                                    id="inputAmount"
                                 />
                             </div>
 
                             <div class="form-items">
-                                <label>Notes</label>
+                                <label>Note</label>
                                 <input
                                     type="text"
                                     class="form-input"
-                                    placeholder="Amount"
+                                    placeholder="Note"
+                                    name="note"
+                                    id="inputNote"
                                 />
                             </div>
 
                             <div class="form-items">
-                                <button class="btn btn-save">Save</button>
+                                <button
+                                    type="submit"
+                                    class="btn btn-save"
+                                    id="btn-save"
+                                >
+                                    Save
+                                </button>
                             </div>
                         </form>
                     </div>

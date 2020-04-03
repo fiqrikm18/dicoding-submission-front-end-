@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
 
 /** 
 * font-family: 'Sen', sans-serif;
@@ -7,11 +7,11 @@
 */
 
 :root {
-    --light--blue: #35BBCA;
+    --light--blue: #35bbca;
     --dark-blue: #0191b4;
-    --yellow: #FBD90F;
-    --light-green: #D3DB18;
-    --orange: #FE7A15;
+    --yellow: #fbd90f;
+    --light-green: #d3db18;
+    --orange: #fe7a15;
     --padding: 15px;
 }
 
@@ -30,12 +30,17 @@
     line-height: 1.5em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--dark-blue);
 }
 
 body {
-    font-family: 'Sen', sans-serif; 
+    font-family: "Sen", sans-serif;
     background-color: rgb(250, 250, 250);
 }
 
@@ -44,7 +49,7 @@ header {
     color: white;
     padding: 15px;
     position: sticky;
-    font-family: 'Sen', sans-serif;
+    font-family: "Sen", sans-serif;
     top: 0;
 }
 
@@ -61,7 +66,7 @@ main {
 
 .card {
     background-color: white;
-    box-shadow: .5px 0px 3px 2px #cccccc;
+    box-shadow: 0.5px 0px 3px 2px #cccccc;
     border-radius: 2px;
     margin: 10px 20px 10px 0;
     box-sizing: border-box;
@@ -83,10 +88,10 @@ main {
 
 .nav-items {
     text-decoration: none;
-    color:  white;
+    color: white;
     margin: 10px 0px;
-    font-size: .8em;
-    font-family: 'Sen', sans-serif;
+    font-size: 0.8em;
+    font-family: "Sen", sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -107,7 +112,7 @@ main {
     color: var(--dark-blue);
 }
 
-.nav-items:hover > svg rect{
+.nav-items:hover > svg rect {
     stroke: var(--dark-blue);
     fill: none;
 }
@@ -122,7 +127,7 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: .9em;
+    font-size: 0.9em;
 }
 
 .profile img {
@@ -172,16 +177,15 @@ main {
 }
 
 .btn-save {
-    background-color: var(--dark-blue);
+    background-color: var(--light--blue);
     color: white;
     overflow: auto;
     float: right;
 }
 
 .btn-save:hover {
-    opacity: .8;
+    background-color: var(--dark-blue);
 }
-
 
 .btn-save:focus {
     border: none;
@@ -190,6 +194,10 @@ main {
 .soc-icon {
     color: var(--light--blue);
     margin: 30px 10px 10px 10px;
+}
+
+.soc-icon:hover {
+    color: var(--dark-blue);
 }
 
 #balance {
@@ -210,9 +218,10 @@ main {
 footer {
     background-color: var(--dark-blue);
     bottom: 0;
-    width: 96%;
+    width: 95%;
     right: 0;
     float: right;
+    position: sticky;
     padding: 15px;
     color: white;
 }
