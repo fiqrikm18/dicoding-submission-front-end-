@@ -11,16 +11,6 @@
             integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
             crossorigin="anonymous"
         />
-
-        <script>
-            window.onload = function() {
-                isLoggedin = localStorage.getItem("isLoggedIn");
-
-                if(!isLoggedin || isLoggedin == undefined || isLoggedin == null) {
-                    window.location = '/login.html'
-                }
-            }
-        </script>
     </head>
     <body>
         <header>
@@ -168,17 +158,16 @@
 
             <section class="container">
                 <section class="content">
+                    <h3 style="text-align: center;">Balance</h3>
                     <div id="balance" class="card">
                         <div>
                             <h4>Balance</h4>
-                            <p id="current-balance">Rp. 25.000</p>
+                            <p id="current-balance">0</p>
                         </div>
 
                         <div>
                             <h4>Expenses</h4>
-                            <p id="expenses">
-                                Rp. 50.000
-                            </p>
+                            <p id="expenses">0</p>
                         </div>
                     </div>
 
@@ -186,7 +175,7 @@
                         <form onsubmit="saveData(event)">
                             <h3>Add Transaction</h3>
                             <div class="form-items">
-                                <label>Amount</label>
+                                <label>Amount<br> <span style="font-size: 8pt; color: tomato;">(Tambahkan tanda "+/-" dipisah dengan ";" pada awalan, Contoh: "+;2000" atau "-;2000")</span></label>
                                 <input
                                     type="text"
                                     name="amount"
@@ -219,159 +208,25 @@
                         </form>
                     </div>
 
-                    <div class="history">
-                        <p class="card">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloremque quas odit totam id dignissimos,
-                            quisquam maxime minus. Officiis, ullam maiores,
-                            animi ad similique aliquam porro itaque ducimus
-                            totam amet quidem.
-                        </p>
-                        <p class="card">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloremque quas odit totam id dignissimos,
-                            quisquam maxime minus. Officiis, ullam maiores,
-                            animi ad similique aliquam porro itaque ducimus
-                            totam amet quidem.
-                        </p>
-                        <p class="card">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloremque quas odit totam id dignissimos,
-                            quisquam maxime minus. Officiis, ullam maiores,
-                            animi ad similique aliquam porro itaque ducimus
-                            totam amet quidem.
-                        </p>
-                        <p class="card">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloremque quas odit totam id dignissimos,
-                            quisquam maxime minus. Officiis, ullam maiores,
-                            animi ad similique aliquam porro itaque ducimus
-                            totam amet quidem.
-                        </p>
-                        <p class="card">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloremque quas odit totam id dignissimos,
-                            quisquam maxime minus. Officiis, ullam maiores,
-                            animi ad similique aliquam porro itaque ducimus
-                            totam amet quidem.
-                        </p>
-                        <p class="card">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloremque quas odit totam id dignissimos,
-                            quisquam maxime minus. Officiis, ullam maiores,
-                            animi ad similique aliquam porro itaque ducimus
-                            totam amet quidem.
-                        </p>
-                        <p class="card">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloremque quas odit totam id dignissimos,
-                            quisquam maxime minus. Officiis, ullam maiores,
-                            animi ad similique aliquam porro itaque ducimus
-                            totam amet quidem.
-                        </p>
-                        <p class="card">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloremque quas odit totam id dignissimos,
-                            quisquam maxime minus. Officiis, ullam maiores,
-                            animi ad similique aliquam porro itaque ducimus
-                            totam amet quidem.
-                        </p>
-                        <p class="card">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloremque quas odit totam id dignissimos,
-                            quisquam maxime minus. Officiis, ullam maiores,
-                            animi ad similique aliquam porro itaque ducimus
-                            totam amet quidem.
-                        </p>
-                        <p class="card">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloremque quas odit totam id dignissimos,
-                            quisquam maxime minus. Officiis, ullam maiores,
-                            animi ad similique aliquam porro itaque ducimus
-                            totam amet quidem.
-                        </p>
-                        <p class="card">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloremque quas odit totam id dignissimos,
-                            quisquam maxime minus. Officiis, ullam maiores,
-                            animi ad similique aliquam porro itaque ducimus
-                            totam amet quidem.
-                        </p>
-                        <p class="card">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloremque quas odit totam id dignissimos,
-                            quisquam maxime minus. Officiis, ullam maiores,
-                            animi ad similique aliquam porro itaque ducimus
-                            totam amet quidem.
-                        </p>
-                        <p class="card">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloremque quas odit totam id dignissimos,
-                            quisquam maxime minus. Officiis, ullam maiores,
-                            animi ad similique aliquam porro itaque ducimus
-                            totam amet quidem.
-                        </p>
-                        <p class="card">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloremque quas odit totam id dignissimos,
-                            quisquam maxime minus. Officiis, ullam maiores,
-                            animi ad similique aliquam porro itaque ducimus
-                            totam amet quidem.
-                        </p>
-                        <p class="card">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloremque quas odit totam id dignissimos,
-                            quisquam maxime minus. Officiis, ullam maiores,
-                            animi ad similique aliquam porro itaque ducimus
-                            totam amet quidem.
-                        </p>
-                        <p class="card">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloremque quas odit totam id dignissimos,
-                            quisquam maxime minus. Officiis, ullam maiores,
-                            animi ad similique aliquam porro itaque ducimus
-                            totam amet quidem.
-                        </p>
-                        <p class="card">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloremque quas odit totam id dignissimos,
-                            quisquam maxime minus. Officiis, ullam maiores,
-                            animi ad similique aliquam porro itaque ducimus
-                            totam amet quidem.
-                        </p>
-                        <p class="card">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloremque quas odit totam id dignissimos,
-                            quisquam maxime minus. Officiis, ullam maiores,
-                            animi ad similique aliquam porro itaque ducimus
-                            totam amet quidem.
-                        </p>
-                        <p class="card">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloremque quas odit totam id dignissimos,
-                            quisquam maxime minus. Officiis, ullam maiores,
-                            animi ad similique aliquam porro itaque ducimus
-                            totam amet quidem.
-                        </p>
+                    <h3 style="text-align: center;margin-top: 20px;">History</h3>
+                    <div class="history" id="history">
+                        
                     </div>
                 </section>
 
                 <aside class="profile">
                     <div class="card">
-                        <img src="assets/img/dashboard.svg" alt="profile" />
+                        <img src="assets/img/profile.jpg" alt="profile" />
                         <p>Fiqri Khoirul M</p>
                         <p>fiqrikm18@gmail.com</p>
                         <p>+628221482xxxx</p>
 
                         <div class="sociale">
-                            <a href="#"
+                            <a href="https://www.facebook.com/fiqri.k.m"
                                 ><span class="fa fa-facebook soc-icon"></span
                             ></a>
-                            <a href="#"
+                            <a href="https://www.instagram.com/fiqri_khoirul/"
                                 ><span class="fa fa-instagram soc-icon"></span
-                            ></a>
-                            <a href="#"
-                                ><span class="fa fa-envelope soc-icon"></span
                             ></a>
                         </div>
                     </div>

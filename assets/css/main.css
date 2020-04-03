@@ -105,7 +105,7 @@ main {
     display: flex;
     flex-direction: column;
     margin: 10px;
-    top: var(--padding);
+    bottom: var(--padding);
 }
 
 .nav-items:hover {
@@ -221,11 +221,131 @@ footer {
     width: 95%;
     right: 0;
     float: right;
-    position: sticky;
-    padding: 15px;
+    position: fixed;
+    padding: 10px;
     color: white;
 }
 
 footer > p {
     margin: 0 25px;
+}
+
+.clear {
+    clear: both;
+}
+
+.history {
+    width: 60%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 5px auto;
+    justify-content: center;
+}
+
+#history {
+    margin-bottom: 25px;
+}
+
+.history-content {
+    display: flex;
+    justify-content: space-between;
+    border-left: 5px solid var(--orange);
+    border-radius: 0px;
+    width: 100%;
+    margin: 5px auto;
+}
+
+.history-content > p {
+    margin: 5px 20px;
+}
+
+/* create media query for responsive */
+@media screen  and (min-width: 400px) and (max-width: 600px) {
+    footer {
+        display: none;
+    }
+
+    .container {
+        width: 100vw;
+    }
+
+    #history {
+        margin-bottom: 50px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: auto;
+    }
+
+    .profile {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        padding: 5px;
+        justify-content: space-between;
+    }
+
+    .nav-container {
+        width: 100%;
+        height: 60px;
+        bottom: 0px;
+    }
+
+    .nav-items {
+        margin: auto 25px;
+    }
+}
+
+@media screen  and (min-width: 300px) and (max-width: 400px) {
+    footer {
+        display: none;
+    }
+
+    .container {
+        width: 100vw;
+    }
+
+    #history {
+        margin-bottom: 50px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: auto;
+    }
+
+    .history-content > p {
+        margin: 5px;
+    }
+
+    .profile {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        padding: 5px;
+        justify-content: space-between;
+    }
+
+    .nav-container {
+        width: 100%;
+        height: 60px;
+        bottom: 0px;
+    }
+
+    .nav-items {
+        margin: auto 25px;
+    }
 }
